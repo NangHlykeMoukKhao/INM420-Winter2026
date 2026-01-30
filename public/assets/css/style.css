@@ -1,72 +1,105 @@
-@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Open+Sans:wght@300&family=Outfit&family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Pacifico&family=Passion+One&family=Rubik:ital,wght@0,400;0,700;0,900;1,400&family=Schoolbell&family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;600&family=Honk&family=Onest&family=Open+Sans:wght@300;400&family=Roboto:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lugrasimo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+/* ==========================================================================
+   FONTS
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
 
+/* ==========================================================================
+   BASE STYLES
+   ========================================================================== */
 body {
-    background: #155984;
-    color: #121015;
-    font-family: "Raleway", sans-serif;
-}
-
-header {
-    background: #edf6f9;
-    text-align: center;
-    padding: 40px;
-}
-
-header h1 {
-    font-weight: 300;
-    font-size: 24px;
+  background: #21b9c4;
+  color: #121015;
+  font-family: "Crimson Text", serif;
+  margin: 0;
+  line-height: 1.6;
 }
 
 p {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+/* ==========================================================================
+   LAYOUT
+   ========================================================================== */
+header {
+  background: #edf6f9;
+  text-align: center;
+  padding: 40px;
+}
+
+header h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 42px;
+  margin: 0;
+  letter-spacing: 1px;
 }
 
 main {
-    background: #edf6f9;
-    padding: 20px;
+  background: #edf6f9;
+  padding: 20px;
 }
 
 main div {
-    background: #c0e297;
-    padding: 20px;
-    margin-bottom: 10px;
-    text-align: center;
+  background: #c0e297;
+  padding: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 8px;
+  font-family: "Crimson Text", serif;
 }
-.bebas-neue-regular {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+
+main div h2,
+main div h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
 }
 
 footer {
-    font-weight: 600;
-    text-align: center;
-    background: #e2f0c4;
-    color: #e29578;
-    padding: 40px;
-    border-top: 2px solid #e29578;
-
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  text-align: center;
+  background: #e2f0c4;
+  color: #e29578;
+  padding: 40px;
+  border-top: 2px solid #e29578;
 }
 
+/* ==========================================================================
+   UTILITY CLASSES
+   ========================================================================== */
+.elegant-heading {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.elegant-body {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ==========================================================================
+   MEDIA QUERIES
+   ========================================================================== */
 @media (min-width: 650px) {
-    main {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
+  main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 
-    main p {
-        width: 100%;
-    }
+  main p {
+    width: 100%;
+  }
 
-    main div {
-        width: calc(33.3333% - 50px);
-    }
+  main div {
+    width: calc(33.3333% - 14px);
+  }
+  
+  header h1 {
+    font-size: 52px;
+  }
 }
