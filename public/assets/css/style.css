@@ -24,6 +24,12 @@ header h1 {
     font-size: 24px;
 }
 
+.hyelim {
+  font-family: 'Changa One', cursive;
+  font-size: 48px;
+  color: #7209B7;
+}
+
 p {
     margin-bottom: 20px;
 }
@@ -46,6 +52,13 @@ main div {
     font-size: 30px;
     color: #000000;
 }
+
+.daisy {
+    font-family: "Moo Lah Lah", sans-serif;
+    font-size: 30px;
+    color:#c6613c;
+}
+
 .bebas-neue-regular {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
