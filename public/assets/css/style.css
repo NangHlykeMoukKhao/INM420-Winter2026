@@ -125,6 +125,84 @@ h2 {
     color: #41e72f;
 }
 
+/* CSS SECTION FOR STEPHANIE CHAN */
+    /* Styling container divs */
+.stephanie-animation {
+    display: flex;
+    width: 650px;
+    height: 150px;
+    background-color: lightpink;
+    border-radius: 24px;
+    justify-content: center;
+    border-top: 12px solid white;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -10%);
+}
+
+.cradle-box {
+    display: flex;
+    padding: 75px 55px 0 55px;
+    flex: 1
+}
+
+    /* Create each ball */
+.ball {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: lightskyblue;
+    position: relative;
+    transform-origin: 50% -300%;
+
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    text-shadow: cyan 0px 0px 5px;
+}
+
+    /* Add pendulum rods*/
+.ball::before {
+    content: '';
+    width: 2px;
+    height: 75px;
+    background-color: #fffeff;
+    left: 30px;
+    top: -75px;
+    position: absolute;
+}
+
+    /* Animate ball 1 swing */
+.ball.first {
+    animation: firstball 900ms alternate ease-in infinite;
+}
+
+@keyframes firstball {
+    0% {
+        transform: rotate(15deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+}
+
+    /* Animate ball 9 swing */
+.ball.last { 
+    animation: lastball 900ms alternate ease-out infinite;
+}
+
+@keyframes lastball {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-15deg);
+    }
+}
+/* END OF CSS SECTION FOR STEPHANIE CHAN */
+
 footer {
     font-weight: 600;
     text-align: center;
